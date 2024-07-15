@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: gray;
@@ -12,6 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navbar h1 {
@@ -63,20 +63,18 @@ h4 {
 
 .card-icon {
     font-size: 36px;
-    /* Adjust the icon size */
     color: #007bff;
-    /* Set your desired icon color */
 }
 
 .card-title {
-    font-weight: bold;
     margin-top: 10px;
+    font-family: "rOthersBold";
 }
 
 .card-text {
     font-size: 14px;
     color: white;
-    /* Set your desired text color */
+    font-family: "rOthersBold";
 }
 
 
@@ -89,6 +87,7 @@ h4 {
     text-align: center;
     cursor: pointer;
     transition: .5s ease-in-out;
+    font-family: "rOthers";
 }
 
 .img-responsive {
@@ -149,6 +148,7 @@ h4 {
 
 .first-title {
     color: red;
+    font-family: "rSmallTitle";
 }
 
 .second-title {
@@ -170,21 +170,25 @@ h4 {
 .second-card-text {
     padding: 10%;
     color: gray;
+    font-family: "rOthersBold";
 }
 
 .second-first-title {
     color: #52D4D7;
     padding: 10%;
+    font-family: "rOthersBold";
 }
 
 .second-second-title {
     color: rgb(101, 235, 77);
     padding: 10%;
+    font-family: "rOthersBold";
 }
 
 .second-third-title {
     color: red;
     padding: 10%;
+    font-family: "rOthersBold";
 }
 
 .img-responsive-2 {
@@ -207,6 +211,7 @@ h4 {
     text-align: center;
     cursor: pointer;
     transition: .5s ease-in-out;
+    font-family: "rOthers";
 }
 
 .learn-more-button-card:hover {
@@ -222,6 +227,7 @@ h4 {
     text-align: center;
     cursor: pointer;
     transition: .5s ease-in-out;
+    font-family: "rOthers";
 }
 
 .learn-more-button:hover {
@@ -237,6 +243,7 @@ h4 {
     text-align: center;
     cursor: pointer;
     transition: .5s ease-in-out;
+    font-family: "rOthers";
 }
 
 .learn-button:hover {
@@ -255,6 +262,7 @@ h4 {
 
 .third-first-title {
     color: red;
+    font-family: "rSmallTitle";
 }
 
 .photo-padding {
@@ -264,15 +272,18 @@ h4 {
 .third-card-first-text {
     padding: 2%;
     color: gray;
+    font-family: "rOthersBold";
 }
 
 .third-second-title {
     padding: 1%;
     color: gray;
+    font-family: "rOthersBold";
 }
 
 .third-card-text {
     color: gray;
+    font-family: "rOthersBold";
 }
 
 .first-buy-button {
@@ -284,6 +295,7 @@ h4 {
     text-align: center;
     cursor: pointer;
     transition: .5s ease-in-out;
+    font-family: "rOthers";
 }
 
 .second-version-buy-button {
@@ -295,6 +307,7 @@ h4 {
     text-align: center;
     cursor: pointer;
     transition: .5s ease-in-out;
+    font-family: "rOthers";
 }
 
 .second-version-buy-button:hover {
@@ -320,6 +333,7 @@ h4 {
 
 .sixth-version-paragraph {
     color: red;
+    font-family: "rSmallTitle";
 }
 
 
@@ -351,22 +365,27 @@ h4 {
 
 .fourth-version-card-text {
     color: gray;
+    font-family: "rOthersBold";
 }
 
 .fourth-version-card-number {
     color: #52D4D7;
+    font-family: "rOthersBold";
 }
 
 .fourth-version-card-second-number {
     color: rgb(255, 187, 0);
+    font-family: "rOthersBold";
 }
 
 .fourth-version-card-third-number {
     color: rgb(101, 235, 77);
+    font-family: "rOthersBold";
 }
 
 .fourth-version-card-fourth-number {
     color: red;
+    font-family: "rOthersBold";
 }
 
 .seventh-body {
@@ -376,6 +395,7 @@ h4 {
 
 .fiftht-version-title {
     color: white;
+    font-family: "rOthersBold";
 }
 
 .fun-container {
@@ -504,12 +524,46 @@ font-family: "rFooter";
 
 .about-us-text {
 color: gray;
+font-family: "rOthersBold";
 }
 
 .about-us-paragraph {
 color: red;
+font-family: "rSmallTitle";
 }
 
 .welcome-text {
 color: rgb(240, 51, 51);
+font-family: "rSmallTitle";
+}
+
+@font-face {
+font-family: "rSmallTitle";
+src: url(./Fonts/Niconne-Regular.ttf);
+}
+
+@font-face {
+font-family: "rOthers";
+src: url(./Fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+font-family: "rOthersBold";
+src: url(./Fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+.h2-text-style {
+font-family: "rOthersBold";
+}
+
+.welcome-paragraph-style {
+font-family: "rOthersBold";
+}
+
+.mb-3 {
+font-family: "rOthersBold";
+}
+
+.pe-2 {
+font-family: "rOthersBold";
 }
