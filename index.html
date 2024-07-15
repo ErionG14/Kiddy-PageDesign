@@ -13,7 +13,6 @@
         
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: gray;
@@ -26,6 +25,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
         }
 
         .navbar h1 {
@@ -77,20 +77,18 @@
 
         .card-icon {
             font-size: 36px;
-            /* Adjust the icon size */
             color: #007bff;
-            /* Set your desired icon color */
         }
 
         .card-title {
-            font-weight: bold;
             margin-top: 10px;
+            font-family: "rOthersBold";
         }
 
         .card-text {
             font-size: 14px;
             color: white;
-            /* Set your desired text color */
+            font-family: "rOthersBold";
         }
 
 
@@ -103,6 +101,7 @@
             text-align: center;
             cursor: pointer;
             transition: .5s ease-in-out;
+            font-family: "rOthers";
         }
 
         .img-responsive {
@@ -163,6 +162,7 @@
 
         .first-title {
             color: red;
+            font-family: "rSmallTitle";
         }
 
         .second-title {
@@ -184,21 +184,25 @@
         .second-card-text {
             padding: 10%;
             color: gray;
+            font-family: "rOthersBold";
         }
 
         .second-first-title {
             color: #52D4D7;
             padding: 10%;
+            font-family: "rOthersBold";
         }
 
         .second-second-title {
             color: rgb(101, 235, 77);
             padding: 10%;
+            font-family: "rOthersBold";
         }
 
         .second-third-title {
             color: red;
             padding: 10%;
+            font-family: "rOthersBold";
         }
 
         .img-responsive-2 {
@@ -221,6 +225,7 @@
             text-align: center;
             cursor: pointer;
             transition: .5s ease-in-out;
+            font-family: "rOthers";
         }
 
         .learn-more-button-card:hover {
@@ -236,6 +241,7 @@
             text-align: center;
             cursor: pointer;
             transition: .5s ease-in-out;
+            font-family: "rOthers";
         }
 
         .learn-more-button:hover {
@@ -251,6 +257,7 @@
             text-align: center;
             cursor: pointer;
             transition: .5s ease-in-out;
+            font-family: "rOthers";
         }
 
         .learn-button:hover {
@@ -269,6 +276,7 @@
 
         .third-first-title {
             color: red;
+            font-family: "rSmallTitle";
         }
 
         .photo-padding {
@@ -278,15 +286,18 @@
         .third-card-first-text {
             padding: 2%;
             color: gray;
+            font-family: "rOthersBold";
         }
 
         .third-second-title {
             padding: 1%;
             color: gray;
+            font-family: "rOthersBold";
         }
 
         .third-card-text {
             color: gray;
+            font-family: "rOthersBold";
         }
 
         .first-buy-button {
@@ -298,6 +309,7 @@
             text-align: center;
             cursor: pointer;
             transition: .5s ease-in-out;
+            font-family: "rOthers";
         }
 
         .second-version-buy-button {
@@ -309,6 +321,7 @@
             text-align: center;
             cursor: pointer;
             transition: .5s ease-in-out;
+            font-family: "rOthers";
         }
 
         .second-version-buy-button:hover {
@@ -334,6 +347,7 @@
 
         .sixth-version-paragraph {
             color: red;
+            font-family: "rSmallTitle";
         }
 
 
@@ -365,22 +379,27 @@
 
         .fourth-version-card-text {
             color: gray;
+            font-family: "rOthersBold";
         }
 
         .fourth-version-card-number {
             color: #52D4D7;
+            font-family: "rOthersBold";
         }
 
         .fourth-version-card-second-number {
             color: rgb(255, 187, 0);
+            font-family: "rOthersBold";
         }
 
         .fourth-version-card-third-number {
             color: rgb(101, 235, 77);
+            font-family: "rOthersBold";
         }
 
         .fourth-version-card-fourth-number {
             color: red;
+            font-family: "rOthersBold";
         }
 
         .seventh-body {
@@ -390,6 +409,7 @@
 
         .fiftht-version-title {
             color: white;
+            font-family: "rOthersBold";
         }
 
         .fun-container {
@@ -518,14 +538,48 @@ a {
 
 .about-us-text {
     color: gray;
+    font-family: "rOthersBold";
 }
 
 .about-us-paragraph {
     color: red;
+    font-family: "rSmallTitle";
 }
 
 .welcome-text {
     color: rgb(240, 51, 51);
+    font-family: "rSmallTitle";
+}
+
+@font-face {
+    font-family: "rSmallTitle";
+    src: url(./Fonts/Niconne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "rOthers";
+    src: url(./Fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "rOthersBold";
+    src: url(./Fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+.h2-text-style {
+    font-family: "rOthersBold";
+}
+
+.welcome-paragraph-style {
+    font-family: "rOthersBold";
+}
+
+.mb-3 {
+    font-family: "rOthersBold";
+}
+
+.pe-2 {
+    font-family: "rOthersBold";
 }
     </style>
 </head>
@@ -547,8 +601,8 @@ a {
 
                     <!-- Title and Text -->
                     <p class="welcome-text">Welcome to our website</p>
-                    <h2>Discover Kiddy Playground</h2>
-                    <p>Your kids' favorite place for fun and adventure!</p> <br>
+                    <h2 class="h2-text-style">Discover Kiddy Playground</h2>
+                    <p class="welcome-paragraph-style">Your kids' favorite place for fun and adventure!</p> <br>
 
                     <!-- Button -->
                     <p><button class="about-button">Learn More</button></p>
@@ -605,7 +659,7 @@ a {
                 <!-- Right column for the content -->
                 <div class="col-md-8">
                     <p class="about-us-paragraph">About us</p>
-                    <h2>Bring Fun Life To Your Kids</h2>
+                    <h2 class="h2-text-style">Bring Fun Life To Your Kids</h2>
                     <p class="about-us-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste
                         natus error sit voluptatem accusantium doloremque laudantium.
@@ -620,7 +674,7 @@ a {
         <div class="container">
             <div class="fourth-body-title">
                 <p class="first-title">Packages You Like</p>
-                <h2 class="second-title">Our Packages</h2>
+                <h2 class="second-title h2-text-style">Our Packages</h2>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -669,7 +723,7 @@ a {
                 <div class="col-md-4">
                     <div class="third-version-card">
                         <p class="third-first-title">Pricing Plan</p>
-                        <h2>Our Pricing</h2>
+                        <h2 class="h2-text-style">Our Pricing</h2>
                         <p class="third-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
                             beatae
                             quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati voluptate
@@ -689,7 +743,7 @@ a {
                                 quos numquam! Blanditiis</p>
                             <p class="third-card-first-text"><i class="bi bi-check2 custom-aqua"></i><a
                                     class="minor-fix">...</a>Nam
-                                repellendus rem aspernatur obcaecati
+                                repellendus rem aspernatur
                             </p> <br><br><br>
                             <p><button class="second-version-buy-button">Buy Now</button></p>
                         </div>
@@ -709,7 +763,7 @@ a {
                             quos numquam! Blanditiis</p>
                         <p class="third-card-first-text"><i class="bi bi-check2 custom-red"></i><a
                                 class="minor-fix">...</a>Nam
-                            repellendus rem aspernatur obcaecati
+                            repellendus rem aspernatur
                         </p> <br><br><br>
                         <p><button class="learn-more-button-card">Buy Now</button></p>
                     </div>
@@ -721,7 +775,7 @@ a {
         <div class="container">
             <div class="sixth-version-text">
                 <p class="sixth-version-paragraph">Testimonlial</p>
-                <h2 class="sixth-version-title">What Our Clients Say About Us</h2>
+                <h2 class="sixth-version-title h2-text-style">What Our Clients Say About Us</h2>
             </div>
             <!-- Carousel wrapper -->
             <div id="carouselMultiItemExample" data-mdb-carousel-init
