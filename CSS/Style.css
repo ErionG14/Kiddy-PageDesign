@@ -1,0 +1,515 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.navbar {
+    background-color: gray;
+    color: #fff;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-right: 40%;
+    color: #fff;
+}
+
+.navbar p {
+    margin: 0;
+    font-size: 14px;
+
+    /* Add some margin to separate the address and opening hours */
+    margin-right: 5%;
+    /* You can adjust this value */
+}
+
+
+
+/* h1,
+h4 {
+    color: #333;
+} */
+.card {
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    text-align: center;
+}
+
+.card h4 {
+    color: white;
+}
+
+.first-one {
+    background-color: red;
+}
+
+.second-one {
+    background-color: orange;
+}
+
+.third-one {
+    background-color: #52D4D7;
+}
+
+.card-icon {
+    font-size: 36px;
+    /* Adjust the icon size */
+    color: #007bff;
+    /* Set your desired icon color */
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: white;
+    /* Set your desired text color */
+}
+
+
+.about-button {
+    border: 1px solid #ff9800;
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 30px 3px 30px 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.img-responsive {
+    padding: 5%;
+    height: 300px;
+    width: 500px;
+}
+
+.img-responsive-1 {
+    padding: 5%;
+    height: 300px;
+    width: 400px;
+}
+
+.about-button:hover {
+    background-color: #f57c00;
+}
+
+.icon-lg {
+    font-size: 20px;
+}
+
+.text-color {
+    color: #fff;
+}
+
+.custom-orange {
+    color: orange;
+}
+
+.custom-red {
+    color: red;
+}
+
+.second-body {
+    background-color: white;
+    padding: 5%;
+}
+
+.custom-white {
+    color: white;
+}
+
+.third-body {
+    background-color: #f9f9f9;
+    padding: 5%;
+}
+
+.fourth-body {
+    background-color: rgba(0, 187, 255, 0.733);
+    padding: 5%;
+}
+
+.fourth-body-title {
+    text-align: center;
+    padding: 3%;
+}
+
+.first-title {
+    color: red;
+}
+
+.second-title {
+    color: white;
+}
+
+.second-version-card {
+    background-color: #f9f9f9;
+}
+
+.second-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    text-align: center;
+}
+
+.second-card-text {
+    padding: 10%;
+    color: gray;
+}
+
+.second-first-title {
+    color: #52D4D7;
+    padding: 10%;
+}
+
+.second-second-title {
+    color: rgb(101, 235, 77);
+    padding: 10%;
+}
+
+.second-third-title {
+    color: red;
+    padding: 10%;
+}
+
+.img-responsive-2 {
+    width: 70px;
+    height: 70px;
+}
+
+.img-responsive-3 {
+    width: 80px;
+    height: 70px;
+}
+
+
+.learn-more-button-card {
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px 3px 30px 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.learn-more-button-card:hover {
+    background-color: rgb(192, 18, 18);
+}
+
+.learn-more-button {
+    border: 1px solid rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: #fff;
+    border-radius: 30px 3px 30px 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.learn-more-button:hover {
+    background-color: orange;
+}
+
+.learn-button {
+    border: 1px solid rgb(24, 197, 24);
+    background-color: rgb(24, 197, 24);
+    color: #fff;
+    border-radius: 30px 3px 30px 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.learn-button:hover {
+    background-color: green;
+}
+
+.fiftht-body {
+    background-color: white;
+    padding: 5%;
+}
+
+.third-version-card {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.third-first-title {
+    color: red;
+}
+
+.photo-padding {
+    color: white;
+}
+
+.third-card-first-text {
+    padding: 2%;
+    color: gray;
+}
+
+.third-second-title {
+    padding: 1%;
+    color: gray;
+}
+
+.third-card-text {
+    color: gray;
+}
+
+.first-buy-button {
+    border: 1px solid rgb(24, 197, 24);
+    background-color: rgb(24, 197, 24);
+    color: #fff;
+    border-radius: 30px 3px 30px 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.second-version-buy-button {
+    border: 1px solid #52D4D7;
+    background-color: #52D4D7;
+    color: #fff;
+    border-radius: 30px 3px 30px 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.second-version-buy-button:hover {
+    background-color: #43b1b3;
+}
+
+.minor-fix {
+    color: white;
+}
+
+.custom-aqua {
+    color: #52D4D7;
+}
+
+.sixth-body {
+    background-color: #f9f9f9;
+    padding: 5%;
+}
+
+.sixth-version-text {
+    text-align: center;
+}
+
+.sixth-version-paragraph {
+    color: red;
+}
+
+
+
+.sixth-version-title {
+    padding-bottom: 3%;
+}
+
+/* .carousel-card.active {
+    background-color: #f9f9f9;
+}
+
+.carousel-item {
+    transform: translateX(-100%);
+    transition: transform 1.5s ease;
+}
+
+.carousel-item.active {
+    transform: translateX(0);
+} */
+
+.fourth-version-card {
+    text-align: center;
+}
+
+.seperate {
+    padding-bottom: 3%;
+}
+
+.fourth-version-card-text {
+    color: gray;
+}
+
+.fourth-version-card-number {
+    color: #52D4D7;
+}
+
+.fourth-version-card-second-number {
+    color: rgb(255, 187, 0);
+}
+
+.fourth-version-card-third-number {
+    color: rgb(101, 235, 77);
+}
+
+.fourth-version-card-fourth-number {
+    color: red;
+}
+
+.seventh-body {
+    background-color: rgb(255, 187, 0);
+    padding: 3%;
+}
+
+.fiftht-version-title {
+    color: white;
+}
+
+.fun-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-lg-2 {
+    font-size: 25px;
+}
+
+.custom-pink {
+    color: #f17e7e;
+}
+
+.subscribe-button-card {
+    border: 1px solid #f17e7e;
+    background-color: #f17e7e;
+    color: #fff;
+    border-radius: 10px 5px 10px 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.subscribe-button-card:hover {
+    background-color: #ee6363;
+}
+
+/* Example CSS rules for the footer */
+.footer-03 {
+background-color: #f8f1f1; /* Dark background color */
+
+padding: 40px 0; /* Add some vertical spacing */
+padding-top: 5%;
+padding-bottom: 5%;
+font-family: 'Arial', sans-serif;
+line-height: 1.15;
+}
+
+.footer-heading {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 20px; /* Add spacing below headings */
+}
+
+.list-unstyled li {
+margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.ftco-footer-social i {
+font-size: 24px;
+margin-right: 15px; /* Add spacing between social icons */
+}
+
+.subscribe-form {
+display: flex;
+align-items: center;
+}
+
+.subscribe-form input {
+flex: 1;
+padding: 10px;
+border: 1px solid #fff;
+border-radius: 5px;
+margin-right: 10px; /* Add spacing between input and button */
+}
+
+.subscribe-button-card {
+background-color: #ff6b6b;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Add hover effect for the button */
+.subscribe-button-card:hover {
+background-color: #ff4f4f;
+}
+
+/* Copyright text style */
+.border-top p {
+font-size: 14px;
+margin-top: 20px; /* Add spacing above the copyright text */
+}
+
+.ftco-footer-social li {
+list-style: none; /* This removes the default bullet points */
+}
+
+a {
+text-decoration: none;
+}
+
+.custom-grey {
+color: rgba(0, 0, 0, 0.3);
+transition: .5s ease-in-out;
+}
+
+.custom-grey:hover {
+color: gray;
+}
+
+.copyright {
+color: rgba(0, 0, 0, 0.3);
+font-family: "rFooter";
+}
+
+@font-face {
+font-family: "rFooter";
+src: url(./Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.title-style {
+font-weight: normal;
+font-family: "rFooter";
+}
+
+.placeholder-style {
+font-family: "rFooter";
+}
+
+.about-us-text {
+color: gray;
+}
+
+.about-us-paragraph {
+color: red;
+}
+
+.welcome-text {
+color: rgb(240, 51, 51);
+}

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddy Playground</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+
+        .navbar {
+            background-color: gray;
+            color: #fff;
+            padding: 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            margin-right: 40%;
+            color: #fff;
+        }
+
+        .navbar p {
+            margin: 0;
+            font-size: 14px;
+
+            /* Add some margin to separate the address and opening hours */
+            margin-right: 5%;
+            /* You can adjust this value */
+        }
+
+
+
+        /* h1,
+        h4 {
+            color: #333;
+        } */
+        .card {
+
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Optional: Add a subtle shadow */
+            text-align: center;
+        }
+
+        .card h4 {
+            color: white;
+        }
+
+        .first-one {
+            background-color: red;
+        }
+
+        .second-one {
+            background-color: orange;
+        }
+
+        .third-one {
+            background-color: #52D4D7;
+        }
+
+        .card-icon {
+            font-size: 36px;
+            /* Adjust the icon size */
+            color: #007bff;
+            /* Set your desired icon color */
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: white;
+            /* Set your desired text color */
+        }
+
+
+        .about-button {
+            border: 1px solid #ff9800;
+            background-color: #ff9800;
+            color: #fff;
+            border-radius: 30px 3px 30px 3px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .img-responsive {
+            padding: 5%;
+            height: 300px;
+            width: 500px;
+        }
+
+        .img-responsive-1 {
+            padding: 5%;
+            height: 300px;
+            width: 400px;
+        }
+
+        .about-button:hover {
+            background-color: #f57c00;
+        }
+
+        .icon-lg {
+            font-size: 20px;
+        }
+
+        .text-color {
+            color: #fff;
+        }
+
+        .custom-orange {
+            color: orange;
+        }
+
+        .custom-red {
+            color: red;
+        }
+
+        .second-body {
+            background-color: white;
+            padding: 5%;
+        }
+
+        .custom-white {
+            color: white;
+        }
+
+        .third-body {
+            background-color: #f9f9f9;
+            padding: 5%;
+        }
+
+        .fourth-body {
+            background-color: rgba(0, 187, 255, 0.733);
+            padding: 5%;
+        }
+
+        .fourth-body-title {
+            text-align: center;
+            padding: 3%;
+        }
+
+        .first-title {
+            color: red;
+        }
+
+        .second-title {
+            color: white;
+        }
+
+        .second-version-card {
+            background-color: #f9f9f9;
+        }
+
+        .second-card {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Optional: Add a subtle shadow */
+            text-align: center;
+        }
+
+        .second-card-text {
+            padding: 10%;
+            color: gray;
+        }
+
+        .second-first-title {
+            color: #52D4D7;
+            padding: 10%;
+        }
+
+        .second-second-title {
+            color: rgb(101, 235, 77);
+            padding: 10%;
+        }
+
+        .second-third-title {
+            color: red;
+            padding: 10%;
+        }
+
+        .img-responsive-2 {
+            width: 70px;
+            height: 70px;
+        }
+
+        .img-responsive-3 {
+            width: 80px;
+            height: 70px;
+        }
+
+
+        .learn-more-button-card {
+            border: 1px solid red;
+            background-color: red;
+            color: #fff;
+            border-radius: 30px 3px 30px 3px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .learn-more-button-card:hover {
+            background-color: rgb(192, 18, 18);
+        }
+
+        .learn-more-button {
+            border: 1px solid rgb(255, 187, 0);
+            background-color: rgb(255, 187, 0);
+            color: #fff;
+            border-radius: 30px 3px 30px 3px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .learn-more-button:hover {
+            background-color: orange;
+        }
+
+        .learn-button {
+            border: 1px solid rgb(24, 197, 24);
+            background-color: rgb(24, 197, 24);
+            color: #fff;
+            border-radius: 30px 3px 30px 3px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .learn-button:hover {
+            background-color: green;
+        }
+
+        .fiftht-body {
+            background-color: white;
+            padding: 5%;
+        }
+
+        .third-version-card {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .third-first-title {
+            color: red;
+        }
+
+        .photo-padding {
+            color: white;
+        }
+
+        .third-card-first-text {
+            padding: 2%;
+            color: gray;
+        }
+
+        .third-second-title {
+            padding: 1%;
+            color: gray;
+        }
+
+        .third-card-text {
+            color: gray;
+        }
+
+        .first-buy-button {
+            border: 1px solid rgb(24, 197, 24);
+            background-color: rgb(24, 197, 24);
+            color: #fff;
+            border-radius: 30px 3px 30px 3px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .second-version-buy-button {
+            border: 1px solid #52D4D7;
+            background-color: #52D4D7;
+            color: #fff;
+            border-radius: 30px 3px 30px 3px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .second-version-buy-button:hover {
+            background-color: #43b1b3;
+        }
+
+        .minor-fix {
+            color: white;
+        }
+
+        .custom-aqua {
+            color: #52D4D7;
+        }
+
+        .sixth-body {
+            background-color: #f9f9f9;
+            padding: 5%;
+        }
+
+        .sixth-version-text {
+            text-align: center;
+        }
+
+        .sixth-version-paragraph {
+            color: red;
+        }
+
+
+
+        .sixth-version-title {
+            padding-bottom: 3%;
+        }
+
+        /* .carousel-card.active {
+            background-color: #f9f9f9;
+        }
+
+        .carousel-item {
+            transform: translateX(-100%);
+            transition: transform 1.5s ease;
+        }
+
+        .carousel-item.active {
+            transform: translateX(0);
+        } */
+
+        .fourth-version-card {
+            text-align: center;
+        }
+
+        .seperate {
+            padding-bottom: 3%;
+        }
+
+        .fourth-version-card-text {
+            color: gray;
+        }
+
+        .fourth-version-card-number {
+            color: #52D4D7;
+        }
+
+        .fourth-version-card-second-number {
+            color: rgb(255, 187, 0);
+        }
+
+        .fourth-version-card-third-number {
+            color: rgb(101, 235, 77);
+        }
+
+        .fourth-version-card-fourth-number {
+            color: red;
+        }
+
+        .seventh-body {
+            background-color: rgb(255, 187, 0);
+            padding: 3%;
+        }
+
+        .fiftht-version-title {
+            color: white;
+        }
+
+        .fun-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon-lg-2 {
+            font-size: 25px;
+        }
+
+        .custom-pink {
+            color: #f17e7e;
+        }
+
+        .subscribe-button-card {
+            border: 1px solid #f17e7e;
+            background-color: #f17e7e;
+            color: #fff;
+            border-radius: 10px 5px 10px 5px;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .subscribe-button-card:hover {
+            background-color: #ee6363;
+        }
+
+        /* Example CSS rules for the footer */
+.footer-03 {
+    background-color: #f8f1f1; /* Dark background color */
+    
+    padding: 40px 0; /* Add some vertical spacing */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.15;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add spacing below headings */
+}
+
+.list-unstyled li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.ftco-footer-social i {
+    font-size: 24px;
+    margin-right: 15px; /* Add spacing between social icons */
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px; /* Add spacing between input and button */
+}
+
+.subscribe-button-card {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect for the button */
+.subscribe-button-card:hover {
+    background-color: #ff4f4f;
+}
+
+/* Copyright text style */
+.border-top p {
+    font-size: 14px;
+    margin-top: 20px; /* Add spacing above the copyright text */
+}
+
+.ftco-footer-social li {
+    list-style: none; /* This removes the default bullet points */
+}
+
+a {
+    text-decoration: none;
+}
+
+.custom-grey {
+    color: rgba(0, 0, 0, 0.3);
+    transition: .5s ease-in-out;
+}
+
+.custom-grey:hover {
+    color: gray;
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "rFooter";
+}
+
+@font-face {
+    font-family: "rFooter";
+    src: url(./Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.title-style {
+    font-weight: normal;
+    font-family: "rFooter";
+}
+
+.placeholder-style {
+    font-family: "rFooter";
+}
+
+.about-us-text {
+    color: gray;
+}
+
+.about-us-paragraph {
+    color: red;
+}
+
+.welcome-text {
+    color: rgb(240, 51, 51);
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Kiddy</h1>
+        <i class="bi bi-geo-alt-fill custom-orange icon-lg"></i>
+        <p>34 Street Name, City Name, United States</p>
+        <i class="bi bi-clock custom-red icon-lg"></i>
+        <p>Sunday - Friday 8:00AM - 4:00PM Saturday CLOSED</p>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-color">
+
+                    <!-- Title and Text -->
+                    <p class="welcome-text">Welcome to our website</p>
+                    <h2>Discover Kiddy Playground</h2>
+                    <p>Your kids' favorite place for fun and adventure!</p> <br>
+
+                    <!-- Button -->
+                    <p><button class="about-button">Learn More</button></p>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <!-- Image -->
+                <img src="kids.jpg" alt="Kids Playing" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="second-body">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="card first-one">
+                        <i class="bi bi-house-door-fill custom-white icon-lg"></i>
+                        <h4 class="card-title">Indoor Games</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sit labore
+                            ipsam numquam odio doloremque in id nulla autem. Sed sint voluptate eius numquam debitis
+                            accusantium reprehenderit obcaecati voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card second-one">
+                        <i class="bi bi-person-fill custom-white icon-lg"></i>
+                        <h4 class="card-title">Outdoor Games And Events</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae
+                            quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati voluptate
+                            ut consectetur eius a voluptates suscipit, iure, nemo facilis?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card third-one">
+                        <i class="bi bi-gear-fill custom-white icon-lg"></i>
+                        <h4 class="card-title">Camping for Kids</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae
+                            quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati voluptate
+                            ut consectetur eius a voluptates suscipit, iure, nemo facilis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-body">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left column for the image -->
+                <div class="col-md-4">
+                    <img src="about us.jpg" alt="Kids Having Fun" class="img-responsive-1">
+                </div>
+
+                <!-- Right column for the content -->
+                <div class="col-md-8">
+                    <p class="about-us-paragraph">About us</p>
+                    <h2>Bring Fun Life To Your Kids</h2>
+                    <p class="about-us-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste
+                        natus error sit voluptatem accusantium doloremque laudantium.
+                    </p>
+                    <p><button class="about-button">More About Us</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourth-body">
+        <div class="container">
+            <div class="fourth-body-title">
+                <p class="first-title">Packages You Like</p>
+                <h2 class="second-title">Our Packages</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="second-card second-version-card">
+                        <img src="puzzle.png" alt="puzzle photo" class="img-responsive-2">
+                        <p class="second-first-title">Indoor Games</p>
+                        <p class="second-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            beatae
+                            quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati voluptate
+                            ut consectetur eius a voluptates suscipit, iure, nemo facilis?</p>
+                        <p><button class="learn-more-button-card">Learn More</button></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="second-card second-version-card">
+                        <img src="target.png" alt="target photo" class="img-responsive-3">
+                        <p class="second-second-title">Outdoor Games And Events</p>
+                        <p class="second-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            beatae
+                            quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati voluptate
+                            ut consectetur eius a voluptates suscipit, iure, nemo facilis?</p>
+                        <p><button class="learn-more-button">Learn More</button></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="second-card second-version-card">
+                        <img src="camp.png" alt="camp photo" class="img-responsive-2">
+                        <p class="second-third-title">Camping for Kids</p>
+                        <p class="second-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            beatae
+                            quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati
+                            voluptate
+                            ut consectetur eius a voluptates suscipit, iure, nemo facilis?</p>
+                        <p><button class="learn-button">Learn More</button></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="fiftht-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="third-version-card">
+                        <p class="third-first-title">Pricing Plan</p>
+                        <h2>Our Pricing</h2>
+                        <p class="third-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            beatae
+                            quos numquam! Blanditiis eveniet ducimus nam repellendus rem aspernatur obcaecati voluptate
+                            ut consectetur eius a voluptates suscipit, iure, nemo facilis?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="third-version-card">
+                            <img src="silver pack.png" alt="camp photo" class="img-responsive-2">
+                            <p class="photo-padding">.</p>
+                            <h4 class="third-second-title">Silver Pack</h4>
+                            <p class="third-card-first-text"><i class="bi bi-check2 custom-aqua"></i><a
+                                    class="minor-fix">...</a>Lorem ipsum dolor sit amet consectetur</p>
+                            <p class="third-card-first-text"><i class="bi bi-check2 custom-aqua"></i><a
+                                    class="minor-fix">...</a>Debitis beatae
+                                quos numquam! Blanditiis</p>
+                            <p class="third-card-first-text"><i class="bi bi-check2 custom-aqua"></i><a
+                                    class="minor-fix">...</a>Nam
+                                repellendus rem aspernatur obcaecati
+                            </p> <br><br><br>
+                            <p><button class="second-version-buy-button">Buy Now</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="third-version-card">
+                        <img src="golden pack.png" alt="camp photo" class="img-responsive-2">
+                        <p class="photo-padding">.</p>
+                        <h4 class="third-second-title">Golden Pack</h4>
+                        <p class="third-card-first-text"><i class="bi bi-check2 custom-red"></i><a
+                                class="minor-fix">...</a>Lorem
+                            ipsum dolor sit amet consectetur</p>
+                        <p class="third-card-first-text"><i class="bi bi-check2 custom-red"></i><a
+                                class="minor-fix">...</a>Debitis
+                            beatae
+                            quos numquam! Blanditiis</p>
+                        <p class="third-card-first-text"><i class="bi bi-check2 custom-red"></i><a
+                                class="minor-fix">...</a>Nam
+                            repellendus rem aspernatur obcaecati
+                        </p> <br><br><br>
+                        <p><button class="learn-more-button-card">Buy Now</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sixth-body">
+        <div class="container">
+            <div class="sixth-version-text">
+                <p class="sixth-version-paragraph">Testimonlial</p>
+                <h2 class="sixth-version-title">What Our Clients Say About Us</h2>
+            </div>
+            <!-- Carousel wrapper -->
+            <div id="carouselMultiItemExample" data-mdb-carousel-init
+                class="carousel slide carousel-dark text-center seperate" data-mdb-ride="carousel">
+                <!-- Inner -->
+                <div class="carousel-inner py-4">
+                    <!-- Single item -->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Anna Deynah</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                        officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">John Doe</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                        suscipit laboriosam, nisi ut aliquid commodi.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li>
+                                            <i class="fas fa-star-half-alt fa-sm"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Maria Kate</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single item -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Alex Rey</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                        officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Grace Patel</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                        suscipit laboriosam, nisi ut aliquid commodi.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li>
+                                            <i class="fas fa-star-half-alt fa-sm"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Lena Adams</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single item -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Sophia Nguyen</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                        officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Samuel Chen</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                        suscipit laboriosam, nisi ut aliquid commodi.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li>
+                                            <i class="fas fa-star-half-alt fa-sm"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+                                        style="width: 150px;" />
+                                    <h5 class="mb-3">Olivia Turner</h5>
+
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti.
+                                    </p>
+                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="fourth-version-card">
+                        <div class="card-body">
+                            <h2 class="fourth-version-card-number">3423</h2>
+                            <p class="fourth-version-card-text">Happy Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fourth-version-card">
+                        <div class="card-body">
+                            <h2 class="fourth-version-card-second-number">4398</h2>
+                            <p class="fourth-version-card-text">Members</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fourth-version-card">
+                        <div class="card-body">
+                            <h2 class="fourth-version-card-third-number">50+</h2>
+                            <p class="fourth-version-card-text">Staffs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fourth-version-card">
+                        <div class="card-body">
+                            <h2 class="fourth-version-card-fourth-number">2000+</h2>
+                            <p class="fourth-version-card-text">Our Followers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seventh-body">
+        <div class="container fun-container">
+            <h2 class="fiftht-version-title">Bring Fun To Your Kids</h2>
+            <button class="learn-more-button-card">Get Started</button>
+        </div>
+    </div>
+    
+    <footer class="footer-03">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading title-style">Boys</h2>
+                            <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block custom-grey">Jeans</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Jumpers</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Leather</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Shorts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Boots</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Watches</a></li>
+                </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading title-style">Girls</h2>
+                            <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block custom-grey">Dresses</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Jumpsuits</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Shirts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">T-shirts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Swearshirts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Jackets</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Coats</a></li>
+                </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading title-style">Babys</h2>
+                            <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block custom-grey">Shirts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">T-shirts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Polos</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Sweaters</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Sweatshirts</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Jackets</a></li>
+                  <li><a href="#" class="py-1 d-block custom-grey">Watches</a></li>
+                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row justify-content-end">
+                        <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+                            <h2 class="footer-heading title-style">Follow Us</h2>
+                <ul class="ftco-footer-social p-0 d-flex">
+                    <li><i class="bi bi-facebook icon-lg-2 custom-pink"></i></li>
+                    <li><i class="bi bi-instagram icon-lg-2 custom-pink"></i></li>
+                    <li><i class="bi bi-twitter-x icon-lg-2 custom-pink"></i></li>
+                    <li><i class="bi bi-telegram icon-lg-2 custom-pink"></i></li>
+                </ul>
+                            <h2 class="footer-heading mt-5 title-style">Subscribe Us</h2>
+                            <form action="#" class="subscribe-form">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control rounded-left placeholder-style" placeholder="Enter email address">
+                  <button class="subscribe-button-card placeholder-style">Subscribe</button>
+                </div>
+                <!-- <button class="learn-more-button-card">Get Started</button> -->
+              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <p class="copyright">Kiddy Copyright &copy; 2024 All rights reserved</p>
+            </div>
+</body>
+<script src="./JS/Carousel Functionallity.js"></script>
+<script src="./JS/Numbers Effects.js"></script>
+
+</html>
