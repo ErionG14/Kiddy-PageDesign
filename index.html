@@ -555,6 +555,30 @@
         .pe-2 {
             font-family: "rOthersBold";
         }
+
+        @media (min-width: 768px) {
+            .text-md-right {
+                text-align: right !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .mr-md-3,
+            .mx-md-3 {
+                margin-right: 1rem !important;
+            }
+        }
+
+        .terms-conditions-privacy {
+            color: #f17e7e;
+            font-family: "rFooter";
+            transition: .5s ease-in-out;
+        }
+
+        .terms-conditions-privacy:hover {
+            color: #ff4f4f;
+        }
     </style>
 </head>
 
@@ -1070,7 +1094,15 @@
                 </div>
             </div>
             <div class="row mt-5 pt-4 border-top">
-                <p class="copyright">Kiddy Copyright &copy; 2024 All rights reserved</p>
+                <div class="col-md-6 col-lg-8">
+                    <p class="copyright">Kiddy Copyright &copy; 2024 All rights reserved</p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-md-right">
+                    <p class="mb-0 list-unstyled">
+                        <a class="mr-md-3 terms-conditions-privacy" href="#">Terms &amp; Conditions</a>
+                        <a class="mr-md-3 terms-conditions-privacy" href="#">Privacy</a>
+                    </p>
+                </div>
             </div>
 </body>
 <script src="./JS/Carousel Functionallity.js"></script>
